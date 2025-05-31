@@ -1,4 +1,3 @@
-readme_content = """
 # NewsAnalyzer
 
 **NewsAnalyzer** is a Python class for performing Exploratory Data Analysis (EDA) on financial news headlines. It helps uncover trends, sentiment, keyword usage, and publishing patterns.
