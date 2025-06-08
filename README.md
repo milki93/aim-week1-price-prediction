@@ -1,6 +1,6 @@
-# NewsAnalyzer
+# NewsAnalyzer, stockAnalyzer and SentimentStockAnalyzer
 
-**NewsAnalyzer** is a Python class for performing Exploratory Data Analysis (EDA) on financial news headlines. It helps uncover trends, sentiment, keyword usage, and publishing patterns.
+**NewsAnalyzer** is a class for performing Exploratory Data Analysis (EDA) on financial news headlines. It helps uncover trends, sentiment, keyword usage, and publishing patterns.
 
 ## Features
 
@@ -12,13 +12,36 @@
 - Track keyword trends over time  
 - Compare weekday vs weekend publishing  
 
-## Usage
 
-```python
-from news_analyzer import NewsAnalyzer
 
-analyzer = NewsAnalyzer(csv_path="data/raw_analyst_ratings.csv", show_plots=True)
-analyzer.run_all()
-analyzer.plot_keyword_trend("merger")
-analyzer.top_keywords_by_publisher("Reuters")
-analyzer.compare_weekday_weekend()
+**StockAnalyzer** is a class computes and visualizes common financial indicators using historical stock price data.
+
+## Features
+
+- **Load stock data** from:
+  - CSV files (e.g., `AAPL_historical_data.csv`)
+
+- **Compute indicators** using **TA-Lib**:
+  - Simple Moving Average (SMA)
+  - Relative Strength Index (RSI)
+  - MACD (Moving Average Convergence Divergence)
+  - Bollinger Bands
+
+- **Generate and save plots** for each indicator
+
+- **Optional**: Portfolio summary using **PyNance**
+
+
+
+**SentimentStockAnalyzer** is a class correlates daily average sentiment from news with daily stock price returns.
+
+## Features
+
+- Assign sentiment scores using **TextBlob**
+- Aggregate **average sentiment per day**
+- Calculate **daily stock returns**
+- Merge **sentiment and stock data by date**
+- Compute **Pearson correlation coefficient**
+- Visualize:
+  - **Sentiment vs return scatter plot** with regression line
+  - **Sentiment trend over time**
