@@ -2,7 +2,7 @@
 
 **NewsAnalyzer** is a class for performing Exploratory Data Analysis (EDA) on financial news headlines. It helps uncover trends, sentiment, keyword usage, and publishing patterns.
 
-## Features
+##### Features
 
 - Load and clean news data  
 - Analyze headline lengths and publishers  
@@ -16,7 +16,7 @@
 
 **StockAnalyzer** is a class computes and visualizes common financial indicators using historical stock price data.
 
-## Features
+#### Features
 
 - **Load stock data** from:
   - CSV files (e.g., `AAPL_historical_data.csv`)
@@ -35,7 +35,7 @@
 
 **SentimentStockAnalyzer** is a class correlates daily average sentiment from news with daily stock price returns.
 
-## Features
+#### Features
 
 - Assign sentiment scores using **TextBlob**
 - Aggregate **average sentiment per day**
